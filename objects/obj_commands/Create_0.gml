@@ -1,0 +1,1 @@
+global.tela_cheia = 0;

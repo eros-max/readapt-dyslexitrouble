@@ -1,0 +1,1 @@
+global.tempo_sumir = 0.6;
