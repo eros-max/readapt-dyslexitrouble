@@ -1,5 +1,5 @@
 randomise();
-letter = irandom(26); //define a letra aleatóriamente
+letter = irandom(25); //define a letra aleatóriamente
 letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 letterValue = letters[letter];
 
@@ -12,6 +12,9 @@ switch(letter){
 		break;
 	case 1:
 		sprite_index = spr_letterB;
+		break;
+	case 2:
+		sprite_index = spr_letter;
 		break;
 	case 3:
 		sprite_index = spr_letter;
@@ -82,10 +85,8 @@ switch(letter){
 	case 25:
 		sprite_index = spr_letter;
 		break;
-	case 26:
-		sprite_index = spr_letter;
-		break;
+	default:
 }
 
-seguindo = false;
+inHands = false;
 velocidade = 6;

@@ -1,2 +1,2 @@
-seguindo = true;
+inHands = true;
 global.playerLetter = letterValue;
