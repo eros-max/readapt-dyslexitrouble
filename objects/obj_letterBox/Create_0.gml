@@ -2,6 +2,7 @@ randomise();
 letter = irandom(25); //define a letra aleatóriamente
 letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 letterValue = letters[letter];
+inHands = false;
 
 image_index = 0;
 image_speed = 0;
@@ -87,6 +88,3 @@ switch(letter){
 		break;
 	default:
 }
-
-inHands = false;
-velocidade = 6;

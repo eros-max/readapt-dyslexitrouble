@@ -11,10 +11,10 @@
     {"name":"inst_3F79657A","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_732FF7DF","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_783C2CC3","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_7D298C6E","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_64F3BBB4","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_753862F","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_8571FB2","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_7D298C6E","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -38,7 +38,7 @@
   "name":"Room1",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Objects/Rooms.yy",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
