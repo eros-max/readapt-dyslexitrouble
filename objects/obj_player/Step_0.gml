@@ -5,6 +5,12 @@
 
 	// Movimentação //
 
+health_set = function(new_value){
+	if global.player_health != new_value {
+		global.player_health = new_value;
+	}
+}
+
 
 if keyboard_check(ord("W")) && !place_meeting(x, y - global.player_speed , obj_wall){ //Cima
 	y -= global.player_speed;

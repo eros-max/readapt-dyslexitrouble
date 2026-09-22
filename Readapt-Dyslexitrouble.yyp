@@ -39,6 +39,7 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_Aenemy","path":"sprites/spr_Aenemy/spr_Aenemy.yy",},},
+    {"id":{"name":"spr_Aenemysleepy","path":"sprites/spr_Aenemysleepy/spr_Aenemysleepy.yy",},},
     {"id":{"name":"spr_bulletAOE","path":"sprites/spr_bulletAOE/spr_bulletAOE.yy",},},
     {"id":{"name":"spr_letterA","path":"sprites/spr_letterA/spr_letterA.yy",},},
     {"id":{"name":"spr_letterB","path":"sprites/spr_letterB/spr_letterB.yy",},},
