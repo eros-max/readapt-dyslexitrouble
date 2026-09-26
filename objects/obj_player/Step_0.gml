@@ -4,6 +4,8 @@
 //y=clamp(y, 36, room_height * 0.95); // <- ^^ Impedem a saída do player da tela
 
 	// Movimentação //
+image_xscale = 3;
+image_yscale = 3;
 
 health_set = function(new_value){
 	if global.player_health != new_value {
@@ -78,4 +80,27 @@ if (global.pode_atirar == true) {
 			direction = 0;
 		}
 }
+}
+
+if global.can_suffer == true && place_meeting(x, y, obj_Aenemy) {
+	health_set(global.player_health - 1);
+	global.can_suffer = false;
+	alarm[1] = (game_get_speed(gamespeed_fps) * 2);
+}
+
+if (global.can_suffer == false){
+	if (blinking == true){
+		image_alpha -= 1;
+		
+		if (image_alpha <= -1){
+			blinking = false;
+		}
+		
+	} else {
+		image_alpha += 1;
+		
+		if (image_alpha >= 2){
+			blinking = true;
+		}
+	}
 }
