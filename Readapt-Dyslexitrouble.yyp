@@ -31,7 +31,6 @@
     {"id":{"name":"obj_bulletAOE","path":"objects/obj_bulletAOE/obj_bulletAOE.yy",},},
     {"id":{"name":"obj_bulletColision","path":"objects/obj_bulletColision/obj_bulletColision.yy",},},
     {"id":{"name":"obj_commands","path":"objects/obj_commands/obj_commands.yy",},},
-    {"id":{"name":"obj_lastLetter","path":"objects/obj_lastLetter/obj_lastLetter.yy",},},
     {"id":{"name":"obj_letterBox","path":"objects/obj_letterBox/obj_letterBox.yy",},},
     {"id":{"name":"obj_letterEnemy","path":"objects/obj_letterEnemy/obj_letterEnemy.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},

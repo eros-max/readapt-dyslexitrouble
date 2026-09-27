@@ -4,6 +4,7 @@
 //y=clamp(y, 36, room_height * 0.95); // <- ^^ Impedem a saída do player da tela
 
 	// Movimentação //
+	
 image_xscale = 3;
 image_yscale = 3;
 
@@ -12,6 +13,7 @@ health_set = function(new_value){
 		global.player_health = new_value;
 	}
 }
+
 
 
 if keyboard_check(ord("W")) && !place_meeting(x, y - global.player_speed , obj_wall){ //Cima
@@ -26,6 +28,8 @@ if keyboard_check(ord("A")) && !place_meeting(x - global.player_speed, y, obj_wa
 if keyboard_check(ord("D")) && !place_meeting(x + global.player_speed, y, obj_wall){ //Direita
 	x += global.player_speed;
 }
+
+
 
 	// Ataques //
 	
@@ -85,7 +89,7 @@ if (global.pode_atirar == true) {
 if global.can_suffer == true && place_meeting(x, y, obj_Aenemy) {
 	health_set(global.player_health - 1);
 	global.can_suffer = false;
-	alarm[1] = (game_get_speed(gamespeed_fps) * 2);
+	alarm[1] = (game_get_speed(gamespeed_fps) * 1);
 }
 
 if (global.can_suffer == false){
