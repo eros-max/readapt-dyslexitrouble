@@ -9,9 +9,10 @@ if distance_to_object(obj_player) <= 100 || enemy_health != 3{
 }
 
 if alert == true {
-	move_towards_point(obj_player.x, obj_player.y, 2);
+	move_towards_point(obj_player.x, obj_player.y, enemy_speed);
 } else {
 	sprite_index = spr_Aenemysleepy
 	image_blend = c_gray;
 	image_speed = 0.1;
 	}
+

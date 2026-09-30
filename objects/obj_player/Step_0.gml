@@ -5,6 +5,43 @@
 
 	// Movimentação //
 	
+	var up = keyboard_check(ord("W"));
+	var down = keyboard_check(ord("S"));
+	var left = keyboard_check(ord("A"));
+	var right = keyboard_check(ord("D"));
+	
+	var horizontal = (right - left);
+	var vertical = (down - up);
+	
+	var hsp = 0;
+	var vsp = 0;
+
+	
+	if (horizontal != 0 && vertical != 0) {
+		hsp = horizontal * diagonal_player_speed;
+		vsp = vertical * diagonal_player_speed;
+	} else {
+		hsp = horizontal * player_speed;
+		vsp = vertical * player_speed;
+	}
+	
+	if (place_meeting(x + hsp,y,obj_wall)){
+		while(!place_meeting(x+sign(hsp),y,obj_wall)){
+			x += sign(hsp);
+		}
+		hsp = 0;
+}
+
+	if (place_meeting(x,y + vsp,obj_wall)){
+		while(!place_meeting(x,y+sign(vsp),obj_wall)){
+			y += sign(vsp);
+		}
+		vsp = 0;
+}
+	
+	x+=hsp;
+	y+=vsp;
+	
 image_xscale = 3;
 image_yscale = 3;
 
@@ -15,6 +52,7 @@ health_set = function(new_value){
 }
 
 
+/*
 
 if keyboard_check(ord("W")) && !place_meeting(x, y - global.player_speed , obj_wall){ //Cima
 	y -= global.player_speed;
@@ -28,6 +66,8 @@ if keyboard_check(ord("A")) && !place_meeting(x - global.player_speed, y, obj_wa
 if keyboard_check(ord("D")) && !place_meeting(x + global.player_speed, y, obj_wall){ //Direita
 	x += global.player_speed;
 }
+
+*/
 
 
 
