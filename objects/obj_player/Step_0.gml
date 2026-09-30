@@ -42,12 +42,16 @@
 	x+=hsp;
 	y+=vsp;
 	
-image_xscale = 3;
-image_yscale = 3;
+image_xscale = lerp(image_xscale,3,0.1);
+image_yscale = lerp(image_yscale,3,0.1);
 
 health_set = function(new_value){
 	if global.player_health != new_value {
 		global.player_health = new_value;
+		
+		image_xscale = 5
+		image_yscale = 2
+		
 	}
 }
 
@@ -78,7 +82,10 @@ if (global.pode_atirar == true) {
 	if keyboard_check(vk_up) && global.pode_atirar == true{ //Tiro para Cima
 		global.pode_atirar = false;
 		alarm[0] = (game_get_speed(gamespeed_fps) * 0.3);
-	
+		
+		image_xscale = 2;
+		image_yscale = 6;
+		
 		var bullet = instance_create_layer(x , y, "Instances", obj_playerBullets);
 		with(bullet)
 		{
@@ -90,7 +97,8 @@ if (global.pode_atirar == true) {
 	if keyboard_check(vk_down) && global.pode_atirar == true{ //Tiro para Baixo
 		global.pode_atirar = false;
 		alarm[0] = (game_get_speed(gamespeed_fps) * 0.3);
-	
+		image_xscale = 2;
+		image_yscale = 6;
 		var bullet = instance_create_layer(x, y, "Instances", obj_playerBullets);
 		with(bullet)
 		{
@@ -102,6 +110,9 @@ if (global.pode_atirar == true) {
 	if keyboard_check(vk_left) && global.pode_atirar == true{ //Tiro para Esquerda	
 		global.pode_atirar = false;
 		alarm[0] = (game_get_speed(gamespeed_fps) * 0.3);
+	
+		image_xscale = 2;
+		image_yscale = 6;
 	
 		var bullet = instance_create_layer(x, y, "Instances", obj_playerBullets);
 	
@@ -115,6 +126,9 @@ if (global.pode_atirar == true) {
 	if keyboard_check(vk_right) && global.pode_atirar == true{ //Tiro para Direita	
 		global.pode_atirar = false;
 		alarm[0] = (game_get_speed(gamespeed_fps) * 0.3);
+	
+		image_xscale = 2;
+		image_yscale = 6;
 	
 		var bullet = instance_create_layer(x, y, "Instances", obj_playerBullets);
 	
