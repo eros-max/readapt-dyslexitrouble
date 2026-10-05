@@ -3,3 +3,4 @@ image_yscale = 1.5;
 
 alerta = false;
 can_shoot = true;
+enemy_health = 5;

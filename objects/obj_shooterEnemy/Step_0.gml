@@ -1,3 +1,7 @@
+image_xscale = 1.5;
+image_yscale = 1.5;
+
+
 if distance_to_object(obj_player) <= 500{
 	alerta = true;
 } else { alerta = false; }
