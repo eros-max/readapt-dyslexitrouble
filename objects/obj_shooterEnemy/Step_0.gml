@@ -20,6 +20,6 @@ if enemy_health <= 0{
 	instance_destroy();
 }
 
-image_xscale = lerp(image_xscale,1.5,0.1);
-image_yscale = lerp(image_yscale,1.5,0.1);
+image_xscale = lerp(image_xscale,2.5,0.1);
+image_yscale = lerp(image_yscale,2.5,0.1);
 image_blend = c_white;

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shooterEnemy",
-    "path":"sprites/spr_shooterEnemy/spr_shooterEnemy.yy",
+    "name":"spr_Eshooter",
+    "path":"sprites/spr_Eshooter/spr_Eshooter.yy",
   },
   "spriteMaskId":null,
   "visible":true,
