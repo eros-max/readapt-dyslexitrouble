@@ -1,7 +1,3 @@
-image_xscale = 1.5;
-image_yscale = 1.5;
-
-
 if distance_to_object(obj_player) <= 500{
 	alerta = true;
 } else { alerta = false; }
@@ -19,3 +15,11 @@ if alerta = true{
 				}
 	}
 }
+
+if enemy_health <= 0{
+	instance_destroy();
+}
+
+image_xscale = lerp(image_xscale,1.5,0.1);
+image_yscale = lerp(image_yscale,1.5,0.1);
+image_blend = c_white;
