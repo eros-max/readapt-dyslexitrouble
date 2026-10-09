@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Readapt-Dyslexitrouble",
-    "path":"Readapt-Dyslexitrouble.yyp",
+    "name":"Eshooter",
+    "path":"folders/Sprites/Eshooter.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

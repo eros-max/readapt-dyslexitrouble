@@ -126,7 +126,7 @@ if (global.pode_atirar == true) {
 	if keyboard_check(vk_right) && global.pode_atirar == true{ //Tiro para Direita	
 		global.pode_atirar = false;
 		alarm[0] = (game_get_speed(gamespeed_fps) * 0.3);
-	
+		
 		image_xscale = 2;
 		image_yscale = 6;
 	
@@ -143,7 +143,7 @@ if (global.pode_atirar == true) {
 if global.can_suffer == true && place_meeting(x, y, obj_Aenemy) {
 	health_set(global.player_health - 1);
 	global.can_suffer = false;
-	alarm[1] = (game_get_speed(gamespeed_fps) * 1);
+	alarm[1] = (game_get_speed(gamespeed_fps) * 1.5);
 }
 
 if (global.can_suffer == false){
