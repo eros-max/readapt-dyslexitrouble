@@ -17,8 +17,7 @@ if alerta = true{
 					direction = point_direction(x,y,obj_player.x,  obj_player.y);
 				}
 	}
-} else { image_blend = c_gray; }
-
+}
 
 
 if enemy_health <= 0{
@@ -28,3 +27,4 @@ if enemy_health <= 0{
 image_xscale = lerp(image_xscale,2.5,0.1);
 image_yscale = lerp(image_yscale,2.5,0.1);
 image_blend = -1;
+

@@ -36,6 +36,7 @@
     {"id":{"name":"obj_bulletAOE","path":"objects/obj_bulletAOE/obj_bulletAOE.yy",},},
     {"id":{"name":"obj_commands","path":"objects/obj_commands/obj_commands.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
+    {"id":{"name":"obj_door2","path":"objects/obj_door2/obj_door2.yy",},},
     {"id":{"name":"obj_enemyBulletAOE","path":"objects/obj_enemyBulletAOE/obj_enemyBulletAOE.yy",},},
     {"id":{"name":"obj_enemyBullets","path":"objects/obj_enemyBullets/obj_enemyBullets.yy",},},
     {"id":{"name":"obj_Eshooter","path":"objects/obj_Eshooter/obj_Eshooter.yy",},},
