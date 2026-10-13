@@ -1,1 +1,1 @@
-global.tempo_sumir = 2;
+global.tempo_sumir = 4;

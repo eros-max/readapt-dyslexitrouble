@@ -5,3 +5,6 @@ player_speed = 6;
 diagonal_player_speed = player_speed * 0.707;
 global.pode_atirar = true;
 global.playerLetter = "";
+global.pts = 0;
+times = 2;
+image_speed = .5;

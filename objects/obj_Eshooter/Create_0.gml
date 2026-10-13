@@ -6,5 +6,6 @@ can_shoot = true;
 enemy_health = 5;
 image_speed = 0.1;
 
+state = "";
 
 

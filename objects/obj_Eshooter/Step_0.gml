@@ -1,6 +1,8 @@
-if distance_to_object(obj_player) <= 200{
+if distance_to_object(obj_player) <= 300 || enemy_health != 5{
 	alerta = true;
-} else { alerta = false; }
+} else {
+	alerta = false;
+	}
 
 
 if alerta = true{
@@ -21,8 +23,13 @@ if alerta = true{
 
 
 if enemy_health <= 0{
+	with obj_player{
+		pts_set(10);
+	}
 	instance_destroy();
 }
+
+
 
 image_xscale = lerp(image_xscale,2.5,0.1);
 image_yscale = lerp(image_yscale,2.5,0.1);
