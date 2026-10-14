@@ -69,6 +69,7 @@ pts_set = function(value){
 
 health_set = function(new_value){
 	if global.player_health != new_value {
+		audio_play_sound(snd_playerSuffering, 0, false);
 		global.player_health = new_value;
 	}
 }
@@ -99,11 +100,12 @@ if (global.pode_atirar == true) {
 
 	if keyboard_check(vk_up) && global.pode_atirar == true{ //Tiro para Cima
 		global.pode_atirar = false;
-		alarm[0] = (game_get_speed(gamespeed_fps) * 0.3);
+		alarm[0] = (game_get_speed(gamespeed_fps) * 0.5);
 		
 		var bullet = instance_create_layer(x , y, "Instances", obj_playerBullets);
 		with(bullet)
 		{
+			audio_play_sound(snd_playerShooting, 0, false);
 			speed = 10;
 			direction = 90;
 		}
@@ -111,11 +113,12 @@ if (global.pode_atirar == true) {
 
 	if keyboard_check(vk_down) && global.pode_atirar == true{ //Tiro para Baixo
 		global.pode_atirar = false;
-		alarm[0] = (game_get_speed(gamespeed_fps) * 0.3);
+		alarm[0] = (game_get_speed(gamespeed_fps) * 0.5);
 		
 		var bullet = instance_create_layer(x, y, "Instances", obj_playerBullets);
 		with(bullet)
 		{
+			audio_play_sound(snd_playerShooting, 0, false);
 			speed = 10;
 			direction = -90;
 		}
@@ -123,12 +126,13 @@ if (global.pode_atirar == true) {
 
 	if keyboard_check(vk_left) && global.pode_atirar == true{ //Tiro para Esquerda	
 		global.pode_atirar = false;
-		alarm[0] = (game_get_speed(gamespeed_fps) * 0.3);
+		alarm[0] = (game_get_speed(gamespeed_fps) * 0.5);
 	
 		var bullet = instance_create_layer(x, y, "Instances", obj_playerBullets);
 	
 		with(bullet)
 		{
+			audio_play_sound(snd_playerShooting, 0, false);
 			speed = 10;
 			direction = 180;
 		}
@@ -136,12 +140,13 @@ if (global.pode_atirar == true) {
 
 	if keyboard_check(vk_right) && global.pode_atirar == true{ //Tiro para Direita	
 		global.pode_atirar = false;
-		alarm[0] = (game_get_speed(gamespeed_fps) * 0.3);
+		alarm[0] = (game_get_speed(gamespeed_fps) * 0.5);
 	
 		var bullet = instance_create_layer(x, y, "Instances", obj_playerBullets);
 	
 		with(bullet)
 		{
+			audio_play_sound(snd_playerShooting, 0, false);
 			speed = 10;
 			direction = 0;
 		}

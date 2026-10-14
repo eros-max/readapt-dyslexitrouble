@@ -15,6 +15,7 @@ if alerta = true{
 		var bullet = instance_create_layer(x , y, "Instances", obj_enemyBullets);
 				with(bullet)
 				{
+					audio_play_sound(snd_enemyShooting, 0, false);
 					speed = 5;
 					direction = point_direction(x,y,obj_player.x,  obj_player.y);
 				}
