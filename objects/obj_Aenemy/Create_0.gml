@@ -4,3 +4,7 @@ alert = false;
 image_xscale = 3;
 image_yscale = 3;
 image_speed = 0.05;
+
+with obj_commands {
+	enemy_number += 1;
+}

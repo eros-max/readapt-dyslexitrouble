@@ -8,4 +8,6 @@ image_speed = 0.1;
 
 state = "";
 
-
+with obj_commands {
+	enemy_number += 1;
+}

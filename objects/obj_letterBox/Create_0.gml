@@ -2,7 +2,6 @@ randomise();
 letter = irandom(25); //define a letra aleatóriamente
 letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 letterValue = letters[letter];
-pickable = true;
 
 switch(letter){
 	case 0:

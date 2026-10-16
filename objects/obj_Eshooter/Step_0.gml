@@ -24,6 +24,10 @@ if alerta = true{
 
 
 if enemy_health <= 0{
+	with obj_commands{
+		enemy_number -= 1;
+	}
+	
 	with obj_player{
 		pts_set(10);
 	}
