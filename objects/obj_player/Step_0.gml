@@ -160,6 +160,8 @@ if (global.can_suffer == false){
 	
 	if global.player_health <= 0 {
 		instance_destroy();
+		global.room1 = false;
+		obj_commands.enemy_number = 0;
 		room_goto(Menu);
 	}
 }
