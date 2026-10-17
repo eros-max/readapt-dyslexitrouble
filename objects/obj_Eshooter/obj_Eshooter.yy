@@ -12,8 +12,8 @@
   "name":"obj_Eshooter",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Enemy's",
+    "path":"folders/Objects/Enemy's.yy",
   },
   "parentObjectId":null,
   "persistent":false,

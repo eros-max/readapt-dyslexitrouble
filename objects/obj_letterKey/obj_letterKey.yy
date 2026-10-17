@@ -10,8 +10,8 @@
   "name":"obj_letterKey",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Keys",
+    "path":"folders/Objects/Keys.yy",
   },
   "parentObjectId":null,
   "persistent":false,

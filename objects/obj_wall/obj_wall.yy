@@ -8,8 +8,8 @@
   "name":"obj_wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"hud",
+    "path":"folders/Objects/hud.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -9,8 +9,8 @@
   "name":"obj_commands",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Commands",
+    "path":"folders/Objects/Commands.yy",
   },
   "parentObjectId":null,
   "persistent":true,

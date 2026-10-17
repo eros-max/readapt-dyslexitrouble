@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_askHands",
+  "%Name":"obj_menuArt",
   "eventList":[],
   "managed":true,
-  "name":"obj_askHands",
+  "name":"obj_menuArt",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_askHandsL",
-    "path":"sprites/spr_askHandsL/spr_askHandsL.yy",
+    "name":"bg_menu",
+    "path":"sprites/bg_menu/bg_menu.yy",
   },
   "spriteMaskId":null,
   "visible":true,

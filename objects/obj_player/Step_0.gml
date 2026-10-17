@@ -157,4 +157,9 @@ if (global.can_suffer == false){
 			blinking = true;
 		}
 	}
+	
+	if global.player_health <= 0 {
+		instance_destroy();
+		room_goto(Menu);
+	}
 }

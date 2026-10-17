@@ -8,11 +8,3 @@ draw_text(obj_player.x - 100, obj_player.y - 50, "PTS: " + string(global.pts));
 
 
 draw_text_transformed(640, 640, string(global.playerLetter), 4, 4, 0);
-
-/*
-
-if keyboard_check(vk_up){
-	
-}
-
-*/
