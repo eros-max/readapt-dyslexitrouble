@@ -5,58 +5,66 @@
 
 	// Movimentação //
 	
-	var up = keyboard_check(ord("W"));
-	var down = keyboard_check(ord("S"));
-	var left = keyboard_check(ord("A"));
-	var right = keyboard_check(ord("D"));
+	if can_move
+	{
+		var up = keyboard_check(ord("W"));
+		var down = keyboard_check(ord("S"));
+		var left = keyboard_check(ord("A"));
+		var right = keyboard_check(ord("D"));
 	
-	var horizontal = (right - left);
-	var vertical = (down - up);
+		var horizontal = (right - left);
+		var vertical = (down - up);
 	
-	var hsp = 0;
-	var vsp = 0;
+		var hsp = 0;
+		var vsp = 0;
 
 	
-	if (horizontal != 0 && vertical != 0) {
-		hsp = horizontal * diagonal_player_speed;
-		vsp = vertical * diagonal_player_speed;
+		if (horizontal != 0 && vertical != 0) {
+			hsp = horizontal * diagonal_player_speed;
+			vsp = vertical * diagonal_player_speed;
+		} else {
+			hsp = horizontal * player_speed;
+			vsp = vertical * player_speed;
+		}
+	
+		if (place_meeting(x + hsp,y,obj_wall)){
+			while(!place_meeting(x+sign(hsp),y,obj_wall)){
+				x += sign(hsp);
+			}
+			hsp = 0;
+	}
+
+		if (place_meeting(x,y + vsp,obj_wall)){
+			while(!place_meeting(x,y+sign(vsp),obj_wall)){
+				y += sign(vsp);
+			}
+			vsp = 0;
+	}
+
+		if(down) {
+			sprite_index = spr_Nplayer_downing;
+		}
+		else if(up){
+			sprite_index = spr_Nplayer_uping;
+		}
+		else if(left){
+			sprite_index = spr_Nplayer_lefting;
+		}
+		else if(right){
+			sprite_index = spr_Nplayer_righting;
+		}
+		else {
+			sprite_index = spr_Nplayer;
+		}
+	
+		x+=hsp;
+		y+=vsp;
 	} else {
-		hsp = horizontal * player_speed;
-		vsp = vertical * player_speed;
+		var up = 0;
+		var down = 0;
+		var left = 0;
+		var right = 0;
 	}
-	
-	if (place_meeting(x + hsp,y,obj_wall)){
-		while(!place_meeting(x+sign(hsp),y,obj_wall)){
-			x += sign(hsp);
-		}
-		hsp = 0;
-}
-
-	if (place_meeting(x,y + vsp,obj_wall)){
-		while(!place_meeting(x,y+sign(vsp),obj_wall)){
-			y += sign(vsp);
-		}
-		vsp = 0;
-}
-
-	if(down) {
-		sprite_index = spr_Nplayer_downing;
-	}
-	else if(up){
-		sprite_index = spr_Nplayer_uping;
-	}
-	else if(left){
-		sprite_index = spr_Nplayer_lefting;
-	}
-	else if(right){
-		sprite_index = spr_Nplayer_righting;
-	}
-	else {
-		sprite_index = spr_Nplayer;
-	}
-	
-	x+=hsp;
-	y+=vsp;
 	
 
 	
@@ -159,9 +167,9 @@ if (global.can_suffer == false){
 	}
 	
 	if global.player_health <= 0 {
-		instance_destroy();
 		global.room1 = false;
 		obj_commands.enemy_number = 0;
-		room_goto(Menu);
+		transitionStart(Menu, sqc_diagonalOut, sqc_diagonalIn);
+
 	}
 }

@@ -17,7 +17,9 @@ if distance_to_object(obj_player) <= 100 || enemy_health != 3{
 
 if alert == true {
 	//move_towards_point(obj_player.x, obj_player.y, enemy_speed);
-	mp_potential_step(obj_player.x + 10, obj_player.y + 10, 3, false);
+	if object_exists(obj_player){
+		mp_potential_step(obj_player.x + 10, obj_player.y + 10, 3, false);
+	}
 } else {
 	sprite_index = spr_Aenemysleepy
 	image_blend = c_gray;

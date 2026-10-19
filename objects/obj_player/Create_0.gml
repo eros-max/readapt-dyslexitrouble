@@ -9,3 +9,4 @@ global.pts = 0;
 times = 2;
 image_speed = .5;
 global.player_damage = 0.5;
+can_move = true;
