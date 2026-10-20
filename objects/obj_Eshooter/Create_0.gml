@@ -8,6 +8,6 @@ image_speed = 0.1;
 
 state = "";
 
-with obj_commands {
+with obj_room1 {
 	enemy_number += 1;
 }

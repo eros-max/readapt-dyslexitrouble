@@ -9,7 +9,7 @@ if global.tela_cheia >= 2{ // Reseta a variavel global.tela_cheia
 	global.tela_cheia = 0;
 }
 
-// ---------------------------------------- //
+/*
 
 if room == Room1 
 

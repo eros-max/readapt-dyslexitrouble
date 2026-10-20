@@ -1,1 +1,3 @@
-global.playerLetter = keyValue;
+if instance_exists(obj_player){
+	global.playerLetter = keyValue;
+}

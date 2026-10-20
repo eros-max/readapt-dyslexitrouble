@@ -1,5 +1,8 @@
+
+
+
 if enemy_health <= 0 {
-	with obj_commands{
+	with obj_room1{
 		enemy_number -= 1;
 	}
 	
@@ -16,10 +19,13 @@ if distance_to_object(obj_player) <= 100 || enemy_health != 3{
 }
 
 if alert == true {
-	//move_towards_point(obj_player.x, obj_player.y, enemy_speed);
-	if object_exists(obj_player){
-		mp_potential_step(obj_player.x + 10, obj_player.y + 10, 3, false);
+	
+	if instance_exists(obj_player){
+		var path = path_add();
+		mp_potential_path(path, obj_player.x, obj_player.y, 3, 4, 0);
+		path_start(path, 3, 0, 0);
 	}
+
 } else {
 	sprite_index = spr_Aenemysleepy
 	image_blend = c_gray;

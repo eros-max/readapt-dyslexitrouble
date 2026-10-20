@@ -1,4 +1,4 @@
-if global.playerLetter == obj_letterKey.keyValue && obj_commands.enemy_number <= 0 {
+if global.playerLetter == obj_letterKey.keyValue && obj_room1.enemy_number <= 0 {
 	with(obj_player){
 		
 		image_speed = 0;

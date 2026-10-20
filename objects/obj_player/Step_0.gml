@@ -167,9 +167,14 @@ if (global.can_suffer == false){
 	}
 	
 	if global.player_health <= 0 {
-		global.room1 = false;
-		obj_commands.enemy_number = 0;
+		/*obj_room1.enemy_number = 0;
+		global.room1 = false;*/
 		transitionStart(Menu, sqc_diagonalOut, sqc_diagonalIn);
-
+		game_restart();
+		
 	}
+}
+
+if room == Menu {
+	instance_destroy();
 }

@@ -24,7 +24,7 @@ if alerta = true{
 
 
 if enemy_health <= 0{
-	with obj_commands{
+	with obj_room1{
 		enemy_number -= 1;
 	}
 	

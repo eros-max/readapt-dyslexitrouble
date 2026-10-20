@@ -4,7 +4,9 @@ alert = false;
 image_xscale = 3;
 image_yscale = 3;
 image_speed = 0.05;
+playerX = 0;
+playerY = 0;
 
-with obj_commands {
+with obj_room1 {
 	enemy_number += 1;
 }
